@@ -1,0 +1,13 @@
+#+SETUPFILE: ./latexcss.theme
+#+title: Index
+#+author: Aditya Yeleswarapu
+#+date: <2026-01-13 Tue>
+#+tags: :meta
+
+** About Me
+
+Hello! My name is Aditya Chandrasekhar Yeleswarapu, and I am a senior year student at IISER Tirupati (graduating 2027). You are currently seeing the self-study notes that I am taking in preparation for my masters thesis. Thankyou for visiting!
+
+** Contents
+
+TODO.
