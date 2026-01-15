@@ -85,5 +85,5 @@ When $X$ is homotopic to a point we say $X$ is contractible. As far as homotopy 
 But it is staggeringly hard in three dimensions. Even classifying a sphere was called /Poincare conjucture/ and was unsolved for hundreds of years. Although for four dimensions and above it was solved much before.
 
 Also, note that it is in general impossible to classify all shapes of dimension 4 or higher, because it is equivalent to classifying homotopy groups, which is impossible.
-k
+
 [[file:index.org][Back to Home]]
