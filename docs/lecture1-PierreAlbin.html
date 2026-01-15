@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-01-15 Thu 23:15 -->
+<!-- 2026-01-15 Thu 23:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pierre Albin, Lecture I</title>
@@ -22,6 +22,17 @@ background-color: #fdfdfd;
 h1.title { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
 .outline-2 { margin-bottom: 2rem; }
 </style>
+<script>
+window.addEventListener('error', function(e) {
+if (e.target.tagName === 'IMG') {
+var src = e.target.getAttribute('src');
+// If it tried ../images and failed, try /images
+if (src.startsWith('../images/')) {
+e.target.src = src.replace('../images/', '/images/');
+}
+}
+}, true);
+</script>
 <script>
   window.MathJax = {
     tex: {
@@ -128,7 +139,7 @@ Note that in this course, we will look for algebraic invariants. Moreover, we as
 <h2 id="org1fe3307"><span class="section-number-2">3.</span> Example: Retraction Maps</h2>
 <div class="outline-text-2" id="text-3">
 
-<div id="org7cf15c9" class="figure">
+<div id="org016192a" class="figure">
 <p><img src="../images/detraction-maps-1.png" alt="detraction-maps-1.png" width="300px" />
 </p>
 </div>
@@ -159,7 +170,7 @@ Note that two functions \(f_{i}\) and \(f_{j}\) are said to be homotopic, denote
 <h2 id="orgfef75fc"><span class="section-number-2">4.</span> The Mapping Cylinder</h2>
 <div class="outline-text-2" id="text-4">
 
-<div id="org3d824dd" class="figure">
+<div id="org0f6477f" class="figure">
 <p><img src="../images/mapping-cylinder.png" alt="mapping-cylinder.png" width="270px" />
 </p>
 </div>
@@ -228,6 +239,10 @@ But it is staggeringly hard in three dimensions. Even classifying a sphere was c
 
 <p>
 Also, note that it is in general impossible to classify all shapes of dimension 4 or higher, because it is equivalent to classifying homotopy groups, which is impossible.
+</p>
+
+<p>
+<a href="index.html">Back to Home</a>
 </p>
 </div>
 </div>
