@@ -13,14 +13,4 @@
 #+HTML_HEAD:   h1.title { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
 #+HTML_HEAD:   .outline-2 { margin-bottom: 2rem; }
 #+HTML_HEAD: </style>
-#+HTML_HEAD: <script>
-#+HTML_HEAD: window.addEventListener('error', function(e) {
-#+HTML_HEAD:   if (e.target.tagName === 'IMG') {
-#+HTML_HEAD:     var src = e.target.getAttribute('src');
-#+HTML_HEAD:     // If it tried ../images and failed, try /images
-#+HTML_HEAD:     if (src.startsWith('../images/')) {
-#+HTML_HEAD:       e.target.src = src.replace('../images/', '/images/');
-#+HTML_HEAD:     }
-#+HTML_HEAD:   }
-#+HTML_HEAD: }, true);
-#+HTML_HEAD: </script>
+
