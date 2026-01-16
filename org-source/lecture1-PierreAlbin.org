@@ -34,7 +34,7 @@ Note that in this course, we will look for algebraic invariants. Moreover, we as
 ** Example: Retraction Maps
 
 #+ATTR_HTML: :width 300px
-[[file:images/detraction-maps-1.png]]
+[[file:images/detraction-maps-11.svg]]
 
 Mathematically, we say /homotopy/ is a collection of maps $F=\{f_{t}:X\to Y\}$ parameterized by unit closed interval, such that $F_{t}:X\times[0,1]\to Y$ is a continuous map.
 
@@ -49,8 +49,8 @@ Note that two functions $f_{i}$ and $f_{j}$ are said to be homotopic, denoted by
 
 ** The Mapping Cylinder
 
-#+ATTR_HTML: :width 270px
-[[file:images/mapping-cylinder.png]]
+#+ATTR_HTML: :width 380px
+[[file:images/mapping-cylinder.svg]]
 
 Let $f:X\to Y$ be a function. Then mapping cylinder is $m_{f}=X\times[0,1] \amalg_{{(x,0)\sim f(x)}} Y$, which is shown in the diagram.
 
