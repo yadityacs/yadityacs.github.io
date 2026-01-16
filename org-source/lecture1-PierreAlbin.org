@@ -86,4 +86,6 @@ But it is staggeringly hard in three dimensions. Even classifying a sphere was c
 
 Also, note that it is in general impossible to classify all shapes of dimension 4 or higher, because it is equivalent to classifying homotopy groups, which is impossible.
 
+#+INCLUDE: "algebraic-topology-credits.org"
+
 [[file:index.org][Back to Home]]
