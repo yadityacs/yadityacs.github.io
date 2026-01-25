@@ -1,0 +1,22 @@
+#+SETUPFILE: latexcss.theme
+#+title: List of Notes
+#+author: Aditya Yeleswarapu
+#+date: <2026-01-23 Fri>
+#+tags: :Meta
+
+** Topology
+
+*** General Topology
+
+- [[file:munkres-index.org][Munkres: Topology]]
+- [[file:lee-topological-index.org][Lee: Topological Manifolds]]
+
+*** Algebraic Topology
+
+- [[file:brendon-index.org][Bredon: Topology and Geometry]]
+- [[file:hatcher-index.org][Hatcher: Algebraic Topology]]
+
+*** Differential Topology
+
+- [[file:matsumoto-index.org][Matsumoto: An Introduction to Morse Theory]]
+- [[file:milnor-index.org][Milnor: Topology from a Differential Viewpoint]]

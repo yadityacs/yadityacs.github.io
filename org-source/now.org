@@ -1,0 +1,11 @@
+#+SETUPFILE: latex.theme
+#+title: Current Events
+#+author: Aditya Yeleswarapu
+#+date: <2026-01-23 Fri>
+#+tags: :Meta
+
+/This is the place where I keep what I am doing now./
+
+- Preparing for my thesis in 6 months!
+
+[[file:index.org][Home]]

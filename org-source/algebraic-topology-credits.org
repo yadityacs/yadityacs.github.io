@@ -1,1 +1,0 @@
-#+HTML: <hr><footer style="font-size: 0.8em;">Notes based on lectures by Pierre Albin. Illustrations retraced from Allen Hatcher’s <i>Algebraic Topology</i>.</footer>

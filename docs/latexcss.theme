@@ -1,0 +1,16 @@
+#+OPTIONS: html-style:nil num:t toc:t
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex.css/dist/latex.min.css" />
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:   /* Custom Academic Tweaks */
+#+HTML_HEAD:   body { 
+#+HTML_HEAD:     max-width: 80ch; 
+#+HTML_HEAD:     margin: 0 auto; 
+#+HTML_HEAD:     padding: 2rem 1.25rem; 
+#+HTML_HEAD:     line-height: 1.8; 
+#+HTML_HEAD:     background-color: #fdfdfd;
+#+HTML_HEAD:   }
+#+HTML_HEAD:   h1.title { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
+#+HTML_HEAD:   .outline-2 { margin-bottom: 2rem; }
+#+HTML_HEAD: </style>
+

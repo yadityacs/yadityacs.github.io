@@ -1,6 +1,0 @@
-#+title: Algebraic Topology Index
-#+author: Aditya Yeleswarapu
-#+date: <2026-01-14 Wed>
-#+tags: :Topology
-
-- [[file:lecture1-PierreAlbin.org]]

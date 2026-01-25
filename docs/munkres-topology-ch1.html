@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-01-23 Fri 22:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Munkres Topology, Chapter I</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex.css/dist/latex.min.css" />
+<style type="text/css">
+/* Custom Academic Tweaks */
+body {
+max-width: 80ch;
+margin: 0 auto;
+padding: 2rem 1.25rem;
+line-height: 1.8;
+background-color: #fdfdfd;
+}
+h1.title { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
+.outline-2 { margin-bottom: 2rem; }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Munkres Topology, Chapter I</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga64d249">1. Basic definitions</a></li>
+<li><a href="#org2eec856">2. Comparison of Topologies</a></li>
+<li><a href="#orgc75d896">3. Basis of a Topology</a></li>
+<li><a href="#org6d0e886">4. Standard Topology</a></li>
+<li><a href="#org55ffeab">5. Order Topology</a></li>
+<li><a href="#org085ba6b">6. Product Topology on X &times; Y</a></li>
+</ul>
+</div>
+</div>
+<p>
+We can view topological spaces as a generalization of metric spaces or an extension of set theory. However we view them, the key feature of topological spaces is creation of certain &ldquo;structure&rdquo; over a set that allows us to talk about continuity of functions on the set without getting distracted by any other details.
+</p>
+<div id="outline-container-orga64d249" class="outline-2">
+<h2 id="orga64d249"><span class="section-number-2">1.</span> Basic definitions</h2>
+<div class="outline-text-2" id="text-1">
+<div class="definition" id="org07d36a6">
+<p>
+A <b>Topology</b> on a set \(X\) is a collection \(\mathcal{T}\) of subsets of \(X\) having the following properties:
+</p>
+<ol class="org-ol">
+<li>\(\emptyset\) and \(X\) are in \(\mathcal{T}\)</li>
+<li>\(\mathcal{T}\) closed under arbitrary unions of elements</li>
+<li>\(\mathcal{T}\) closed under finite intersections of elements</li>
+</ol>
+
+</div>
+
+<p>
+We call the set \(X\), together with a topology \(\mathcal{T}\) on it, a topological space. However practically \(\mathcal{T}\) is clear from the context and we won&rsquo;t mention it.
+</p>
+
+<p>
+\((X,\mathcal{T})\) a topological space.
+</p>
+<ul class="org-ul">
+<li>We say a subset \(U\) of \(X\) is an <i>open set</i> of \(X\) if \(U \in \mathcal{T}\).</li>
+<li>Similarly, a subset \(V\) of \(X\) is a <i>closed set</i> if its complement is open.</li>
+</ul>
+
+<p>
+Observe that a set can be both open and closed (called clopen). Within topology, we encounter such sets aplenty. However, in geometry and analysis, we generally choose a topological space where that is not possible for sets other than \(\emptyset\) and \(X\) to avoid certain &ldquo;pathological&rdquo; cases.
+</p>
+
+<p>
+Note that I used the word ‘closed’ to mean two different things in the definition and in defining &ldquo;closed sets&rdquo;. I explain the former detail in set theory notes.
+</p>
+
+<p>
+I am skipping some basic examples, but the gist is even small sets can have colossal number of topologies defined on them. We won&rsquo;t care about most of them. However, some of them are good to remember, as edge cases.
+</p>
+
+<p>
+<b>Example.</b> \(X\) a set. The power-set of \(X\) forms a topology on \(X\), called <i>discrete topology</i>. Observe that in this space, any set is both open and closed.
+</p>
+
+<p>
+<b>Example.</b> On the opposite end, there is <i>indiscrete topology</i>. \(X\) and \(\emptyset\) are the only elements of this topology, so we also call it <i>trivial</i> topology.
+</p>
+
+<p>
+<b>Example.</b> Another example is the finite complement topology, where elements are complements of finite subsets of \(X\). (Along with \(\emptyset\) as rules would dictate)
+</p>
+</div>
+</div>
+<div id="outline-container-org2eec856" class="outline-2">
+<h2 id="org2eec856"><span class="section-number-2">2.</span> Comparison of Topologies</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+We can compare two topologies defined on a set.
+</p>
+
+<div class="definition" id="org55d1b03">
+<p>
+\(\mathcal{T}\) and \(\mathcal{T'}\) be two topologies on \(X\). If \(\mathcal{T}\subset\mathcal{T'}\) (i.e. there are more sets in \(\mathcal{T'}\) than \(\mathcal{T}\)) we say \(\mathcal{T'}\) is <i>finer</i> than \(\mathcal{T}\). If the opposite, i.e. \(T\) has more sets, we say \(\mathcal{T'}\) is <i>coarser</i>.
+</p>
+
+</div>
+
+<p>
+This is because \(\mathcal{T}\) and \(\mathcal{T'}\) are &ldquo;spread&rdquo; over the same set, only that finer one is present in a &ldquo;finer&rdquo; detail, while the &ldquo;coarser&rdquo; one is, as one would suspect, more &ldquo;coarse&rdquo;.
+</p>
+
+<p>
+Note that the order is partial here, since sometimes neither \(\mathcal{T}\subset \mathcal{T'}\) nor \(\mathcal{T'}\subset \mathcal{T}\) is true. Intuitively, to compare two &ldquo;patches&rdquo;, they must overlap.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc75d896" class="outline-2">
+<h2 id="orgc75d896"><span class="section-number-2">3.</span> Basis of a Topology</h2>
+<div class="outline-text-2" id="text-3">
+<div class="definition" id="org58539f4">
+<p>
+\((X,\mathcal{T})\) be a topological space. Collection \(\mathit{B}\) of open subsets is a basis if all elements of \(\mathcal{T}\) are union of some elements in \(\mathit{B}\).
+</p>
+
+</div>
+
+<p>
+Note that this means
+</p>
+
+<ol class="org-ol">
+<li>For each \(x\in X\) there is some basis element containing \(x\)</li>
+<li>If \(x\) is in intersection of two basis elements, there is another basis element inside that intersection</li>
+</ol>
+
+<p>
+Munkres defines this in the opposite way.
+</p>
+
+<p>
+Often, to talk about properties of a given topology, we only need to consider its basis.
+</p>
+
+<p>
+To go in the opposite direction (i.e. to get a basis from given topology) we take a collection of sets \(\mathit{F}\) such that for every open set \(U\) in \(\mathcal{T}\) and every element \(x\in U\) there is a subset \(H\) of \(U\), \(H \in \mathit{F}\) containing \(x\).
+</p>
+
+<p>
+In fact, this simplifies comparing topologies. When \(\mathcal{T}\) is coarser than \(\mathcal{T'}\) it means at any point \(x\), if \(B\) is some basis element of \(\mathcal{T}\) containing \(x\) there is some basis element \(B'\) for \(\mathcal{T'}\) which is within \(B\). In other words, basis elements of finer topologies <i>are</i> smaller!
+</p>
+
+<p>
+On a similar note, a <b>sub-basis</b> \(\mathit{S}\) for a topology on \(X\) is a collection of subsets of \(X\) whose union equals \(X\) and finite intersections give the basis for the topology.
+</p>
+</div>
+</div>
+<div id="outline-container-org6d0e886" class="outline-2">
+<h2 id="org6d0e886"><span class="section-number-2">4.</span> Standard Topology</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Although we gave examples of topologies before, we lacked the tools to define the most important, widely used topology - the topology defined by the metric. We are not in metric spaces book though, so we define more formally.
+</p>
+
+<div class="definition" id="org9f7467b">
+<p>
+\(\mathit{B}\) be collection of all subsets on the real line of the form
+</p>
+
+<p>
+\[(a,b)=\{x\in \mathbb{R}|a < x < b\}\]
+</p>
+
+<p>
+Topology generated by \(\mathit{B}\) is the <b>standard topology</b> on \(\mathbb{R}\).
+</p>
+
+</div>
+</div>
+</div>
+<div id="outline-container-org55ffeab" class="outline-2">
+<h2 id="org55ffeab"><span class="section-number-2">5.</span> Order Topology</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+In simply ordered sets, we can also define topology without the metrics. In the real case, these are simply the four types of intervals. i.e. those of the form \(()\), \((]\), \([)\) and \([]\). We call the former open interval (referring to previous topology), and the last closed interval. We call the other two half-open.
+</p>
+
+<p>
+<i>Order Topology</i> allows open intervals as open sets. However, if there is a maxima or a minima, sets closed at that &rsquo;corner&rsquo; are open too. Or rather, such intervals form the basis.
+</p>
+
+<p>
+Note that order here can be anything. For example, there is dictionary order in \(\mathbb{R}^{2}\) which is useful for nothing but defines a topology.
+</p>
+
+<p>
+Note that on the real line, rays (i.e. intervals where one side is infinity) form a sub-basis for the order topology.
+</p>
+</div>
+</div>
+<div id="outline-container-org085ba6b" class="outline-2">
+<h2 id="org085ba6b"><span class="section-number-2">6.</span> Product Topology on X &times; Y</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+We saw ways of obtaining topology from a set. Now we see how to create topology for new sets from old ones, particularly products and quotients. Current section is a &ldquo;baby&rdquo; version of this endeavor.
+</p>
+
+<div class="definition" id="orgefa69df">
+<p>
+Let \(X\) and \(Y\) be two topological spaces. The product topology on \(X\times Y\) is the topology having as basis the collection \(\mathit{B}\) of all sets of the form \(U\times V\) where \(U\) is an open subset of \(X\) and \(V\) is an open subset of \(Y\).
+</p>
+
+</div>
+
+<p>
+We need this because the pairs \(U\times V\) cannot form a topology. Especially unions. <i>We can also see product topology as the smallest possible topology that contains all the pairs \(U \times V\).</i>
+</p>
+
+<p>
+Observe that if \(\mathit{B}\) and \(\mathit{C}\) are basis of \(X\times Y\) then ordered pairs of their elements also form a (smaller) basis for \(X\times Y\).
+</p>
+
+<p>
+Now we construct a sub-basis for \(X\times Y\). Take projection maps \(\pi_{1}\) and \(\pi_{2}\) from \(X\times Y\) onto \(X\) and \(Y\) respectively. Take images of their inverse functions over open sets in \(X\) and \(Y\) (i.e. \(U\times Y\) and \(X\times V\)). Unions of such sets form a sub-basis for \(X\times Y\).
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

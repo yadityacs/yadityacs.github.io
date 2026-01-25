@@ -6,11 +6,15 @@
 
 ** About Me
 
-Hello! My name is Aditya Chandrasekhar Yeleswarapu, and I am a senior year student at IISER Tirupati (graduating 2027). You are currently seeing the self-study notes that I am taking in preparation for my masters thesis. Thankyou for visiting!
+Hello! My name is Aditya Chandrasekhar Yeleswarapu, and I am a senior year math major at IISER Tirupati (graduating 2027). You are currently seeing the self-study notes that I am taking in preparation for my masters thesis. Thanks for visiting!
 
-** Contents
+** Index
 
-*** Topology
+- [[file:now.org][Doing]]
+- [[file:log.org][Log]]
+- [[file:llist.org][List of Notes]]
+- [[file:dictionary.org][Details]]
 
-- General Topology Index
-- [[file:algebraic-topology-index.org][Algebraic Topology Index]]
+** Highlights
+
+** Latest

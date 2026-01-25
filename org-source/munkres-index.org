@@ -1,0 +1,13 @@
+#+SETUPFILE: latexcss.theme
+#+title: Munkres, Topology
+#+author: Aditya Yeleswarapu
+#+date: <2026-01-23 Fri>
+#+tags: :Topology
+
+For any math major, perhaps Munkres' /Topology/ is one of quintessential "math" books; since it is often that courses prior (Linear Algebra, say) are often attended by Physics or CS majors. It is also at this instant that Mathematics takes a more abstract, inward-focusing turn.
+
+But the subject is so central in Mathematics and the author's treatment of it so complete at a basic level, I frequently find a need to consult it when my faculties fail me. Hence I thought of creating a digital version of notes, not only for better memorization but also for references from "higher" courses.
+
+*Note.* I wouldn't cover the set theory chapter, since the material is common in textbooks. I would use my own notation throughout. See my set theory notes for details.
+
+- [[file:munkres-topology-ch1.org][Chapter 2]]
